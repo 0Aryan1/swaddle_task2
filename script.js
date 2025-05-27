@@ -1,4 +1,3 @@
-
 document.addEventListener('DOMContentLoaded', function() {
     // Function to check if an element is in the viewport
     function isInViewport(element) {
@@ -30,3 +29,15 @@ document.addEventListener('DOMContentLoaded', function() {
         handleScroll();
     }, 100);
 });
+
+// Function to toggle mobile menu
+function toggleMobileMenu() {
+    const mobileMenu = document.getElementById('mobileMenu');
+    if (mobileMenu.style.display === 'flex') {
+        mobileMenu.style.display = 'none';
+        document.body.style.overflow = 'auto'; // Enable scrolling
+    } else {
+        mobileMenu.style.display = 'flex';
+        document.body.style.overflow = 'hidden'; // Disable scrolling when menu is open
+    }
+}
