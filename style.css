@@ -351,14 +351,17 @@ nav {
 /* Business Solutions Section */
 .business-solutions {
     background: linear-gradient(to right, #c0c8d3, #e9f0fd);
-    padding: 0 3.125rem;
+    /* padding: 0 3.125rem; */
     margin-bottom: 1.875rem;
     overflow: hidden;
+    background-color: #0056EB;
 }
 
 .solutions-container {
     display: flex;
     justify-content: space-between;
+    gap: 1.875rem;
+    margin-left: 50px;
     flex-wrap: wrap;
 }
 
@@ -373,7 +376,7 @@ nav {
 .solutions-left h2 {
     margin-bottom: 1.875rem;
     font-weight: 700;
-    font-size: 2.25rem;
+    font-size: 2rem;
 }
 
 .solutions-links {
@@ -402,11 +405,11 @@ nav {
 
 .solutions-right {
     flex: 2;
-    min-width: 18.75rem;
+    min-width: 100px;
 }
 
 .solutions-box {
-    max-width: 53.125rem;
+    /* max-width: 53.125rem; */
     height: auto;
     min-height: 30rem;
     background-color: #006290;
