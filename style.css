@@ -56,6 +56,13 @@ nav {
     padding: 8px 16px;
 }
 
+.separator {
+    height: 30px;
+    width: 2px;
+    background-color: #000;
+    margin: 0 20px;
+}
+
 .auth-buttons {
     display: flex;
     align-items: center;
@@ -195,14 +202,13 @@ nav {
 }
 
 .cta-button {
-    background-color: white;
-    color: #1a1a1a;
+    background-color: #5a0fd0;
+    color: white;
     padding: 12px 30px;
     border-radius: 50px;
     font-weight: 600;
     margin-top: 50px;
     margin-bottom: 10px;
-    transition: background-color 0.3s;
     width: 303px;
     height: 77px;
     display: flex;
@@ -211,12 +217,6 @@ nav {
     margin-left: auto;
     margin-right: auto;
     font-size: 36px;
-    border: 2px solid #1a1a1a;
-}
-
-.cta-button:hover {
-    background-color: #5a0fd0;
-    color: white;
 }
 
 .small-text {
@@ -238,6 +238,9 @@ nav {
     background-color: #fff;
     box-shadow: 0 2px 10px rgba(0,0,0,0.05);
     border-radius: 8px;
+    opacity: 0; 
+    transform: translateY(30px); /* Start slightly below their final position */
+    transition: opacity 0.8s ease, transform 0.8s ease; /* Add smooth transition */
 }
 
 #square1 {
@@ -246,6 +249,7 @@ nav {
     top: 15%;
     left: 5%;
     border-radius: 25px;
+    transition-delay: 0.8s; 
 }
 
 #square2 {
@@ -254,6 +258,7 @@ nav {
     top: 2%;
     right: 6%;
     border-radius: 25px;
+    transition-delay: 0.6s; /* Delay for second square */
 }
 
 #square3 {
@@ -262,6 +267,7 @@ nav {
     left: 14%;
     bottom: 15%;
     border-radius: 25px;
+    transition-delay: 1s; /* Delay for third square */
 }
 
 #square4 {
@@ -270,6 +276,13 @@ nav {
     bottom: 5%;
     right: 6%;
     border-radius: 25px;
+    transition-delay: 0.8s; /* Delay for fourth square */
+}
+
+/* Animation class that will be added on scroll */
+.square.visible {
+    opacity: 0.6;
+    transform: translateY(0);
 }
 
 
@@ -398,8 +411,8 @@ nav {
 }
 
 .find-more-btn {
-    background-color: white;
-    color: #1a1a1a;
+    background-color: #1a1a1a;
+    color: white;
     padding: 8px 16px;
     border-radius: 50px;
     font-weight: 600;
@@ -409,14 +422,7 @@ nav {
     justify-content: center;
     align-items: center;
     font-size: 40px;
-    transition: background-color 0.3s;
-    border: 2px solid #1a1a1a;
     
-}
-
-.find-more-btn:hover {
-    background-color: #1a1a1a;
-    color: white;
 }
 
 .second-tittle{
